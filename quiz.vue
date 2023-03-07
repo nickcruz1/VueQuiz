@@ -3,3 +3,5 @@
   <div id="app">
     <h2>Quiz App</h2>
     
+ <!-- Start Of Quiz (This starts the quiz off) Btn -->
+    <button class="startQuizBtn" :class="{clicked: clickMe, notClicked: notClick}" @click="question = 'Q1'">Start Quiz</button>
