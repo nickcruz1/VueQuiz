@@ -109,3 +109,71 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+body {
+  background-color: lightgray;
+}
+
+#app {
+  margin: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+a,
+button {
+  color: #4fc08d;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  margin: 1rem auto auto auto;
+  padding: 0.5rem 1rem;
+  background-color: lightgreen;
+  color: black;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: green;
+  color: white;
+}
+  
+  .startQuizBtn {
+    display: block;
+  }
+  
+  .questionFormat {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 2rem;
+    animation: testAnimation;
+    transition: 1s ease-in-out;
+  }
+  
+  @keyframes testAnimation {
+    from: {opacity: 0}
+    to: {opacity: 1}
+  }
+  
+  .testBtn {
+    top: 40%;
+  }
+  
+  .wrong {
+color: red;
+  }
+  
+ 
+</style>
