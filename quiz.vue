@@ -7,3 +7,17 @@
     <button class="startQuizBtn" :class="{clicked: clickMe, notClicked: notClick}" @click="question = 'Q1'">Start Quiz</button>
  <!-- Use Conditional Class Binding -->
    <!-- Use V-for to display all wrong answers for each view -->
+
+ <!-- Start of Quiz - Question #1 -->
+    <div class="questionFormat" v-if="question === 'Q1'">
+    <div>
+      <h2>Question 1</h2>
+     
+        <p>What is my name?</p>
+
+        <a :class="{wrong: wrongAnswer}" @click="wrongAnswer = !wrongAnswer" href="#">Answer 1</a>
+        <a :class="{wrong: wrongAnswer}" @click="wrongAnswer = !wrongAnswer" href="#">Answer 2</a>
+        <a @click="question = 'Q2'" href="#">Answer 3</a>
+        <a :class="{wrong: wrongAnswer}" @click="wrongAnswer = !wrongAnswer" href="#">Answer 4</a>
+      </div>
+</div>
