@@ -63,3 +63,6 @@
         <a :class="{wrong: wrongAnswer}" @click="wrongAnswer = !wrongAnswer" href="#">Answer 4</a>
       </div>
 </div>
+
+<div class="questionFormat" v-if="question === 'finish'">
+    <h2>CONGRATULATIONS!!!</h2>
