@@ -66,3 +66,16 @@
 
 <div class="questionFormat" v-if="question === 'finish'">
     <h2>CONGRATULATIONS!!!</h2>
+    
+       <p>You've finished the quiz. The number of questions you answered correctly were</p>
+    <p>Click the button below to finish the quiz</p>
+    {{correctAnswers}}
+   
+    <button @click="reset">Finish Quiz</button>
+  </div>
+    
+   
+   
+    
+  </div>
+</template>
