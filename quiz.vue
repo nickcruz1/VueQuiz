@@ -90,3 +90,22 @@ export default {
       correctAnswers: `${this.qCount}/4`
     };
   },
+  
+   methods: {
+    startTheQuiz() {
+      let startQuiz = document.querySelector(".startQuiz");
+      alert("Quiz Has Started");
+      
+      this.startQuiz = !this.startQuiz;
+    },
+    wrongAnswer() {
+      return false;
+    },
+    reset() {
+     let questionFormat = document.querySelector(".questionFormat")
+     
+     questionFormat.style.display = "none";
+    }
+  }
+};
+</script>
