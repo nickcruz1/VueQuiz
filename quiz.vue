@@ -49,3 +49,17 @@
         <a :class="{wrong: wrongAnswer}" @click="wrongAnswer = !wrongAnswer" href="#">Answer 4</a>
       </div>
 </div>
+
+ <!-- Question #4 -->
+      <div class="questionFormat" v-if="question === 'Q4'">
+    <div>
+      <h2>Question 4</h2>
+     
+        <p>How long have I been coding?</p>
+
+        <a :class="{wrong: wrongAnswer}" @click="wrongAnswer = !wrongAnswer" href="#">Answer 1</a>
+        <a :class="{wrong: wrongAnswer}" @click="wrongAnswer = !wrongAnswer" href="#">Answer 2</a>
+        <a @click="question = 'finish'" href="#">Answer 3</a>
+        <a :class="{wrong: wrongAnswer}" @click="wrongAnswer = !wrongAnswer" href="#">Answer 4</a>
+      </div>
+</div>
