@@ -73,9 +73,20 @@
    
     <button @click="reset">Finish Quiz</button>
   </div>
-    
-   
-   
-    
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      startQuiz: false,
+      question: '',
+      wrongAnswer: false,
+      
+      clickMe: false,
+      notClick: false,
+      qCount: 0,
+      correctAnswers: `${this.qCount}/4`
+    };
+  },
