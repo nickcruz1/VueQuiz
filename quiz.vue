@@ -35,3 +35,17 @@
         <a :class="{wrong: wrongAnswer}" @click="wrongAnswer = !wrongAnswer" href="#">Answer 4</a>
       </div>
 </div>
+
+  <!-- Question #3 -->
+      <div class="questionFormat" v-if="question === 'Q3'">
+    <div>
+      <h2>Question 3</h2>
+     
+        <p>Where Do I live?</p>
+
+        <a :class="{wrong: wrongAnswer}" @click="wrongAnswer = !wrongAnswer" href="#">Answer 1</a>
+        <a :class="{wrong: wrongAnswer}" @click="wrongAnswer = !wrongAnswer" href="#">Answer 2</a>
+        <a @click="question = 'Q4'" href="#">Answer 3</a>
+        <a :class="{wrong: wrongAnswer}" @click="wrongAnswer = !wrongAnswer" href="#">Answer 4</a>
+      </div>
+</div>
