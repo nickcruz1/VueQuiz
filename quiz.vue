@@ -139,7 +139,7 @@ button {
   margin: 1rem auto auto auto;
   padding: 0.5rem 1rem;
   background-color: lightgreen;
-  color: black;
+  color: white;
 }
 
 button:hover {
