@@ -172,7 +172,7 @@ button:hover {
   }
   
   .wrong {
-color: red;
+color: darkred;
   }
   
  
